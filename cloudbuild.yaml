@@ -1,7 +1,6 @@
 steps:
   # Step 1: Compile the Go Application
   - name: 'gcr.io/cloud-builders/go'
-    id: 'Compile application'
     env: ['GOPATH=/gopath']
     args: ['build', '-o', 'main', 'main.go']
 
